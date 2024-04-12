@@ -35,7 +35,7 @@ Organizadores disponibilizam eventos e os participantes podem se cadastrar neles
 1. Instalar o .Net Core 8: https://dotnet.microsoft.com/pt-br/download
 2. Clonar o repositório
 3. Ir até a pasta PassIn.API dentro do repositório em uma interface de linha de comando 
-4. Rodar o comando dotnet run Program.cs
+4. Rodar o comando `dotnet run Program.cs`
 5. Abrir o link fornecido pela aplicação dentro da interface
 6. Brincar no Swagger
 
@@ -58,5 +58,4 @@ Implementado por [Daniel Couto Mittelman](https://www.linkedin.com/in/daniel-cou
 Esse projeto foi realizado durante a NLWUnite 15, um evento de estímulo ao aprendizado em desenvovimento de software da Rocketseat. Fica o agradecimento à equipe por ter disponibilizado a estrutura, o sem tempo e seus conhecimentos de forma gratuita para o benefício de todos os participantes.
 
 Professor responsável pelo tutorial:\
-[Welisson Arley](https://www.linkedin.com/in/welissonarley/)\
-@welissonArley
+Welisson Arley

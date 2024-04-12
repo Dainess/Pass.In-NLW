@@ -11,6 +11,9 @@ public class PassInDbContext : DbContext
     public DbSet<CheckIn> Checkins {get; set;}
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=D:\\Backup2023\\Progs\\Explorations\\NLWUnite\\PassInNet7\\PassInDb.db");
+        string baseDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+        string upperDirectory = baseDirectory.Replace("PassIn.API\\bin\\Debug\\net7.0", "");
+        string dbPath = Path.Combine(upperDirectory, "PassInDb.db");
+        optionsBuilder.UseSqlite($"Data Source={dbPath}");
     }
 }

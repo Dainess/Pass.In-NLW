@@ -1,11 +1,12 @@
 ﻿using PassIn.Communication.Responses;
+using PassIn.Infrastructure;
 
 namespace PassIn.Application;
 public class ClassApplication
 {
     public static void RodaFulano(ResponseEventJson response)
     {
-        using (StreamWriter writer = new StreamWriter("D:\\Backup2023\\Progs\\Explorations\\NLWUnite\\PassInNet7\\this.txt"))
+        using (StreamWriter writer = new StreamWriter("this.txt"))
         {
             writer.WriteLine($"Title: {response.Title}");
             writer.WriteLine($"Details: {response.Details}");
@@ -24,7 +25,7 @@ public class ClassApplication
         }
         soma += "}";
         Console.WriteLine(soma);
-        using (StreamWriter writer = new StreamWriter("D:\\Backup2023\\Progs\\Explorations\\NLWUnite\\PassInNet7\\this.txt"))
+        using (StreamWriter writer = new StreamWriter("this.txt"))
         {
             writer.WriteLine($"Title: {evento.Title}");
             writer.WriteLine($"Details: {evento.Details}");
@@ -32,5 +33,11 @@ public class ClassApplication
             writer.WriteLine($"Attendees: {soma}");
             writer.WriteLine($"Maximum capacity: {evento.Maximum_Attendees}");
         }
+    }
+
+    public static void ConectaDB(PassInDbContext dbContext)
+    {
+        var something = dbContext.Database.CanConnect();
+        Console.WriteLine(something);
     }
 }
