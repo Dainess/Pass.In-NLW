@@ -1,6 +1,6 @@
 # Pass.In - Backend C# feito com ASP.NET e SQLite
 
-![Image](".github/ASPNETLogo.jpg")
+![Image](.github/ASPNETLogo.jpg)
 
 ## Introdução
 Pass.In é uma aplicação para gestão de participantes em eventos. 
@@ -41,7 +41,7 @@ Organizadores disponibilizam eventos e os participantes podem se cadastrar neles
 
 ## Guia do Usuário
 ### Endpoints
-![Image](".github/endpoints.jpg")
+![Image](.github/endpoints.jpg)
 ### Modo de usar
 
 A aplicação gira em torno do conceito do evento. Então para se ter qualquer resposta com o programa, a primeira coisa a se fazer é cadastrar um evento usando o endpoint **/api/Events**. O próximo passo será cadastrar um novo participante no evento a partir de **api/Attendees/{eventId}/register**, com ```eventID``` sendo o Id retornado pelo método ```POST``` anterior. 
