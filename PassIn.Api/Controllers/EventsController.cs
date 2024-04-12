@@ -32,7 +32,6 @@ public class EventsController : ControllerBase
         var useCase = new GetEventByIdUseCase();
 
         var response = useCase.Execute(id);
-        ClassApplication.RodaFulano(response);
 
         return Ok(response);
         

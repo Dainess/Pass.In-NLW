@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Options;
 using PassIn.Api.Filters;
+using PassIn.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
